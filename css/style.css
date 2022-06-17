@@ -92,6 +92,8 @@ header ul{
 
 .l-link{
     margin-bottom: 10px;
+    text-align: start;
+    padding-left: 5px;
 }
 
 main{
@@ -183,6 +185,9 @@ footer img:hover{
         margin: 5%;
         width: 90%;
         height: fit-content;
+    }
+    .l-link{
+        text-align: center;
     }
 }
 
