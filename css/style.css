@@ -24,6 +24,7 @@ a{
 body{
     background-color: whitesmoke;
 }
+
 header{
     display: flex;
     justify-content: space-around;
@@ -37,6 +38,7 @@ header{
     flex-wrap: wrap;
     box-shadow: 0px 10px 10px silver;
 }
+
 .page-title{
     padding: 15px 0;
 }
@@ -46,6 +48,7 @@ header ul{
     display: flex;
 
 }
+
 .head-link-list li{
     padding: 3px 10px;
     transition: all 0.8s;
@@ -54,14 +57,17 @@ header ul{
     margin: 0 2.5px;
     
 }
+
 .head-link-list li:hover{
     border-color: rgb(32, 0, 68);
     background-color: rgb(79, 0, 170);
     box-shadow: 0px 0px 5px gray;
 }
+
 .head-link-list a{
     color: whitesmoke;
 }
+
 .main-block{
     display: flex;
     justify-content: space-around;
@@ -70,22 +76,22 @@ header ul{
     color: rgb(73, 73, 73)
 }
 
-.link-text, #diplom{
+.link-text, .l-link{
     color: rgb(157, 0, 230);
     border: 1px solid white;
     border-radius: 7px;
     transition: all 0.6s;
 }
 
-.link-text:hover, #diplom:hover{
+.link-text:hover, .l-link:hover{
     color: rgb(79, 0, 170);
     border-bottom-color: whitesmoke;
     box-shadow: 0 5px 5px silver;
     cursor: pointer;
 }
 
-#diplom{
-    margin-bottom: 5px;
+.l-link{
+    margin-bottom: 10px;
 }
 
 main{
@@ -96,6 +102,7 @@ main{
     width: 55%;
     box-shadow: 0 0 10px silver;
 }
+
 .main-text, .aside-text{
     padding: 10px;
 }
@@ -108,14 +115,20 @@ aside{
     width: 25%;
     box-shadow: 0 0 10px silver;
 }
+
+.main-text, .aside-text{
+    width: 90%;
+    margin: 0 5%;
+}
+
 .main-text ul, .aside-text ul{
     list-style: circle;
     margin: 5% 10%;
 }
+
 .main-block li{
     padding: 5px 0px;
 }
-
 
 footer{
     background-color: rgb(50, 0, 107);
@@ -153,18 +166,22 @@ footer img:hover{
     box-shadow: 0 0 15px rgb(157, 0, 230);
 }
 
+.none {
+    display: none;
+}
+
 @media(max-width: 1000px) {
     .main-block{
         flex-direction: column;
         align-items: center;
     }
     main{
-        width: 80%;
+        width: 90%;
         height: fit-content;
     }
     aside{
         margin: 5%;
-        width: 80%;
+        width: 90%;
         height: fit-content;
     }
 }
