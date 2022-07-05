@@ -173,6 +173,9 @@ footer img:hover{
 }
 
 @media(max-width: 1000px) {
+    *{
+        font-size: 18px;
+    }
     .main-block{
         flex-direction: column;
         align-items: center;
@@ -192,11 +195,15 @@ footer img:hover{
 }
 
 @media (max-width: 600px) {
+    *{
+        font-size: 20px;
+    }
     header{
         position: relative;
     }
     .page-title{
         margin: 5px 20px;
+        text-align: center;
     }
     header ul{
         display: block;
