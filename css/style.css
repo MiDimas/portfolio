@@ -40,6 +40,7 @@ header{
     border-radius: 0 0 7px 7px;
     border-bottom: 3px solid rgb(157, 0, 230);
     position: sticky;
+    z-index: 2;
     top: 0px;
     flex-wrap: wrap;
     box-shadow: 0px 10px 10px silver;
@@ -73,7 +74,59 @@ header ul{
 .head-link-list a{
     color: whitesmoke;
 }
-
+/* блок bar */
+.bar {
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    box-shadow: 0px 0xp 10px rgb(116, 116, 116);
+    margin: 10px;
+    box-sizing: border-box;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    font-size: 35px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+.bar:hover{
+    box-shadow: 0px 0px 20px rgb(76, 76, 76);
+    transform: scale(1.1);
+}
+/* Конец блока bar */
+/* Скрытое меню */
+.hidden-menu{
+    width: 100%;
+    background-color: rgb(157, 0, 230);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 10px 10px silver;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.8s ease;
+}
+.hidden-menu a{
+    color:rgb(224, 235, 255);
+    font-size: 23px;
+}
+.hidden-menu a:hover{
+    color: rgb(255, 255, 255);
+}
+.hidden-menu li{
+    margin: 10px 0px;
+}
+/* когда меню скрыто */
+.unvis-hidden-menu{
+    position: absolute;
+    top: -50px;
+    left: 0px;
+}
+/* когда раскрываем меню */
+.vis-hidden-menu{
+    position: relative;
+    top: -15px;
+    left: 0px;
+}
+/* конец скрытого меню */
 .main-block{
     display: flex;
     justify-content: space-around;
@@ -211,6 +264,8 @@ footer img:hover{
     }
     header{
         position: relative;
+        z-index: 2;
+        box-shadow: none;
     }
     .page-title{
         margin: 5px 20px;
@@ -223,5 +278,31 @@ footer img:hover{
     }
     .head-link-list li{
         margin: 5px 0px;
+    }
+}
+@media (max-width: 370px){
+    .bar{
+        position: fixed;
+        top: 70px;
+        left: 77%;
+        background: linear-gradient(to bottom right, blue, blueviolet 40%, rgb(194, 63, 255) 80%);
+        color: rgb(224, 235, 255);
+    }
+    .unvis-hidden-menu{
+        position: absolute;
+        top: -60px;
+        left: 0px;
+    }
+    .vis-hidden-menu{
+        position: relative;
+        top: -15px;
+        left: 0px;
+    }
+}
+@media (max-width: 300px){
+    .vis-hidden-menu{
+        position: relative;
+        top: -15px;
+        left: 0px;
     }
 }
