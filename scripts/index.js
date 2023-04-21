@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event){
             hiddenMenu.classList.remove("none")
         }
     }
-    correctingSize(event.path[1].innerWidth)
+    correctingSize(window.innerWidth)
     window.addEventListener("resize", correctingSize)
     let bar = document.getElementsByClassName("bar")[0]
     bar.addEventListener("click", function(){
