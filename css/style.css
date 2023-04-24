@@ -13,7 +13,7 @@
 
 *{
     margin: 0;
-    padding: 0px;
+    padding: 0;
     font-family: 'RobotoCondensed-Regular', sans-serif;
     font-size: 16px;
 }
@@ -41,9 +41,9 @@ header{
     border-bottom: 3px solid rgb(157, 0, 230);
     position: sticky;
     z-index: 2;
-    top: 0px;
+    top: 0;
     flex-wrap: wrap;
-    box-shadow: 0px 10px 10px silver;
+    box-shadow: 0 10px 10px silver;
 }
 
 .page-title{
@@ -68,7 +68,7 @@ header ul{
 .head-link-list li:hover{
     border-color: rgb(32, 0, 68);
     background-color: rgb(79, 0, 170);
-    box-shadow: 0px 0px 5px gray;
+    box-shadow: 0 0 5px gray;
 }
 
 .head-link-list a{
@@ -80,7 +80,7 @@ header ul{
     height: 50px;
     background-color: whitesmoke;
     border-radius: 50%;
-    box-shadow: 0px 0xp 10px rgb(116, 116, 116);
+    box-shadow: 0 0 10px rgb(116, 116, 116);
     margin: 10px;
     box-sizing: border-box;
     color: rgb(63, 63, 63);
@@ -90,7 +90,7 @@ header ul{
     transition: all 0.8s ease;
 }
 .bar:hover{
-    box-shadow: 0px 0px 20px rgb(76, 76, 76);
+    box-shadow: 0 0 20px rgb(76, 76, 76);
     transform: scale(1.1);
 }
 /* Конец блока bar */
@@ -98,8 +98,8 @@ header ul{
 .hidden-menu{
     width: 100%;
     background-color: rgb(157, 0, 230);
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 10px 10px silver;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 10px silver;
     box-sizing: border-box;
     text-align: center;
     transition: all 0.8s ease;
@@ -112,27 +112,28 @@ header ul{
     color: rgb(255, 255, 255);
 }
 .hidden-menu li{
-    margin: 10px 0px;
+    margin: 10px 0;
 }
 /* когда меню скрыто */
 .unvis-hidden-menu{
     position: absolute;
     top: -50px;
-    left: 0px;
+    left: 0;
 }
 /* когда раскрываем меню */
 .vis-hidden-menu{
     position: relative;
     top: -15px;
-    left: 0px;
+    left: 0;
 }
 /* конец скрытого меню */
 .main-block{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5% 10%;
-    color: rgb(73, 73, 73)
+    margin: auto 10%;
+    color: rgb(73, 73, 73);
+    min-height: calc(100vh - 145px);
 }
 
 .link-text, .l-link{
@@ -186,7 +187,7 @@ aside{
 }
 
 .main-block li{
-    padding: 5px 0px;
+    padding: 5px 0;
 }
 
 footer{
@@ -195,6 +196,7 @@ footer{
     justify-content: center;
     align-items: center;
     border-top: 3px solid rgb(157, 0, 230);
+    height: 90px;
 }
 footer p{
     margin-right: 20px;
@@ -208,14 +210,14 @@ footer ul{
 }
 
 footer li{
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 footer img{
     width: 48px;
     background-color: whitesmoke;
     border-radius: 50px;
-    margin: 15px 0px;
+    margin: 15px 0;
     transition: all 0.8s;
 }
 
@@ -273,11 +275,11 @@ footer img:hover{
     }
     header ul{
         display: block;
-        margin: 0px 20px;
+        margin: 0 20px;
         text-align: center;
     }
     .head-link-list li{
-        margin: 5px 0px;
+        margin: 5px 0;
     }
 }
 @media (max-width: 370px){
@@ -291,18 +293,18 @@ footer img:hover{
     .unvis-hidden-menu{
         position: absolute;
         top: -60px;
-        left: 0px;
+        left: 0;
     }
     .vis-hidden-menu{
         position: relative;
         top: -15px;
-        left: 0px;
+        left: 0;
     }
 }
 @media (max-width: 300px){
     .vis-hidden-menu{
         position: relative;
         top: -15px;
-        left: 0px;
+        left: 0;
     }
 }
